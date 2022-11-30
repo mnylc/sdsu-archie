@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ */
+function archipelago_subtheme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['fonts']['fonts']['bootstrap_barrio_google_fonts'] = [
+    '#type' => 'select',
+    '#title' => t('Google Fonts combination'),
+    '#default_value' => theme_get_setting('bootstrap_barrio_google_fonts'),
+    '#empty_option' => t('None'),
+    '#options' => [
+      'roboto' => t('Roboto Condensed, Roboto'),
+      'monserrat_lato' => t('Monserrat, Lato'),
+      'alegreya_roboto' => t('Alegreya, Roboto Condensed, Roboto'),
+      'dancing_garamond' => t('Dancing Script, EB Garamond'),
+      'amatic_josefin' => t('Amatic SC, Josefin Sans'),
+      'oswald_droid' => t('Oswald, Droid Serif'),
+      'playfair_alice' => t('Playfair Display, Alice'),
+      'dosis_opensans' => t('Dosis, Open Sans'),
+      'lato_hotel' => t('Lato, Grand Hotel'),
+      'medula_abel' => t('Medula One, Abel'),
+      'fjalla_cantarell' => t('Fjalla One, Cantarell'),
+      'coustard_leckerli' => t('Coustard Ultra, Leckerli One'),
+      'philosopher_muli' => t('Philosopher, Muli'),
+      'vollkorn_exo' => t('Vollkorn, Exo'),
+      'robot_cabin' => t('Roboto Condensed, Cabin'),
+      'belleza_average' => t('Belleza, Average'),
+      'archivo_glegoo'  => t('Glegoo, Archivo'),
+    ],
+  ];
+}
+
+function archipelago_subtheme_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (isset($form['search_api_fulltext'])) {
+    $form['search_api_fulltext']['#attributes']['placeholder'] = t('Search');
+
+  }
+  if (isset($form['sort_by'])) {
+    $form['sort_by']['#attributes']['class'][] = Html::cleanCssIdentifier('d-none');
+    $form['sort_by']['#attributes']['class'][] = Html::cleanCssIdentifier('d-lg-block');
+  }
+  if (isset($form['sort_order'])) {
+    $form['sort_order']['#attributes']['class'][] = Html::cleanCssIdentifier('d-none');
+    $form['sort_order']['#attributes']['class'][] = Html::cleanCssIdentifier('d-lg-block');
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_HOOK() for menu.html.twig.
+ */
+function archipelago_subtheme_preprocess_page(&$variables) {
+  error_log('runs archipelago_subtheme_preprocess_page');
+  // We need the switching classes for navigation toogle
+  // Also on the navbar_top_attributes.
+  switch (theme_get_setting('bootstrap_barrio_navbar_toggle')) {
+    case 'navbar-toggleable-xl':
+      $variables['navbar_top_attributes']['class'][] = 'navbar-expand-xl';
+      break;
+
+    case 'navbar-toggleable-lg':
+      $variables['navbar_top_attributes']['class'][] = 'navbar-expand-lg';
+      break;
+
+    case 'navbar-toggleable-md':
+      $variables['navbar_top_attributes']['class'][] = 'navbar-expand-md';
+      break;
+
+    case 'navbar-toggleable-sm':
+      $variables['navbar_top_attributes']['class'][] = 'navbar-expand-sm';
+      break;
+
+    case 'navbar-toggleable-xs':
+      $variables['navbar_top_attributes']['class'][] = 'navbar-expand-xs';
+      break;
+
+    case 'navbar-toggleable-all':
+      $variables['navbar_top_attributes']['class'][] = '';
+      break;
+
+    default:
+      $variables['navbar_top_attributes']['class'][] = 'navbar-expand-md';
+      break;
+  }
+  // Move navbar to the left instead of to the right by setting justify-content-start
+  // instead of justify-content-end
+  switch (theme_get_setting('bootstrap_barrio_navbar_offcanvas')) {
+    case 'offcanvas-collapse':
+      // NO changes
+      break;
+    default:
+      $variables['navbar_collapse_class'] = 'collapse navbar-collapse justify-content-start';
+  }
+
+  $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+  if ($fonts) {
+    $variables['#attached']['library'][] = 'archipelago_subtheme/' . $fonts;
+  }
+
+}
+
+
+
+
+
+
+
+/**
+ * Implements hook_preprocess_HOOK() for field.html.twig.
+ *
+ * When a field title field has a fontawesome class, create
+ * an <i> tag for hold the fontawesome glyph and prepend it
+ * to the title.
+ *
+ */
+function archipelago_subtheme_preprocess_field(&$variables) {
+  if($variables['field_name'] == 'node_title') {
+    foreach($variables['items'] as &$item) {
+      foreach($item['content'] as &$content) {
+        if(!empty($content['#context']['attributes']) && !empty($content['#context']['wrapper'])) {
+          /** @var Drupal\Core\Template\Attribute $attributes */
+          $attributes = $content['#context']['attributes']->storage();
+          if(!empty($attributes['class'])) {
+            $class = $attributes['class']->__toString();
+            if(strpos($class, 'fas') !== FALSE && $content['#context']['wrapper'] != 'i') {
+              // Running the output through t() marks it as "safe" so that the markup not be sanitized.
+              $content['#context']['output'] = t('<i class="' . $class . '"></i>' . $content['#context']['output']);
+              $content['#context']['attributes']->removeClass($class);
+            }
+          }
+        }
+      }
+    }
+  }
+}

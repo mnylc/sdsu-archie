@@ -1,0 +1,46 @@
+/* ---------- Belleza, Average Sans ---------- */
+
+h1 a,
+h2 a {
+  font-family: 'Archivo', sans-serif;
+}
+h1 {
+  font-family: 'Glegoo', serif;
+  font-weight: 700;
+}
+h2
+{
+  font-family: 'Glegoo', serif;
+  font-weight: 700;
+}
+h2 a {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+}
+h4,
+h5,
+h6 {
+  font-family: 'Glegoo', serif;
+}
+h3,
+h3 a {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body,
+p,
+a,
+li {
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: .035rem;
+}
+
+.site-name-slogan {
+  font-family: 'Archivo', sans-serif;
+}
+
+[role=button] *, .nav-item a, .toolbar * {
+  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif
+}
