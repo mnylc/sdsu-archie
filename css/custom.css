@@ -444,3 +444,23 @@ main.main-content .views-element-container div.content {
 ul.pagination {
  padding-top:1.5em;
 }
+
+
+
+/* SDSU Archie Test Styles */
+
+/* Set type and background color for carousel heading  */
+div > div.carousel-item.active > div > h3 {
+    background: rgb(0 0 0 / .5);;
+    color: #fff;
+}
+
+/* Remove white bg around submit button to allow nav background to show */
+.form-actions {
+    background-color: transparent;
+}
+
+/* Change color of small buttons in sidebar */
+.nav-pills > .nav-item > a.nav-link.active {
+    background-color: #00A39D;
+}
