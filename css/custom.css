@@ -449,16 +449,48 @@ ul.pagination {
 
 /* SDSU Archie Test Styles */
 
+/* Header */
+
+/* Remove white bg around submit button to allow nav background to show */
+.form-actions {
+    background-color: transparent;
+}
+
+/* Homepage */
+
 /* Set type and background color for carousel heading  */
 div > div.carousel-item.active > div > h3 {
     background: rgb(0 0 0 / .5);;
     color: #fff;
 }
 
-/* Remove white bg around submit button to allow nav background to show */
-.form-actions {
-    background-color: transparent;
+/* Collection Page */
+
+/* Remove bullets and default padding from facet link lists */
+/* should we use .facets-widget-links > ul instead? */
+.facet-inactive.js-facets-links.item-list__links.js-facets-widget {
+    list-style-type: none;
+    padding: 0 0;
+  }
+
+/* increase spacing between facet items */
+.facet-item {
+    padding-bottom: .65em;
 }
+
+/* Control size of facet item label so it doesn't get too close to item count  */
+.facet-item__value {
+    display: inline-block;
+    width: 80%;
+    text-decoration: underline;
+}
+
+/* Set item count to the right */
+.facet-item__count {
+    float: right;
+}
+
+/* Object Page */
 
 /* Change color of small buttons in sidebar */
 .nav-pills > .nav-item > a.nav-link.active {
