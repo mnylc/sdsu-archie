@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../bootstrap_barrio"
 		}
 	],
 	"settings": {}
