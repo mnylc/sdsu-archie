@@ -48,9 +48,17 @@ belleza_average:
     component:
       fonts/belleza_average.css: {}
       //fonts.googleapis.com/css2?family=Average+Sans&family=Belleza&family=Glegoo:wght@400;700&display=swap: {type: external, minified: false}
+
 archivo_glegoo:
   version: VERSION
   css:
     component:
       fonts/archivo_glegoo.css: {}
       //fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,400;1,700&family=Glegoo:wght@400;700&display=swap: {type: external, minified: false}
+
+sdsu_archie:
+  version: VERSION
+  css:
+    component:
+      fonts/alegreya_roboto.css: {}
+      //fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:400,500,700: { type: external, minified: false }
