@@ -35,6 +35,7 @@ function archipelago_subtheme_form_system_theme_settings_alter(&$form, FormState
     '#default_value' => theme_get_setting('bootstrap_barrio_google_fonts'),
     '#empty_option' => t('None'),
     '#options' => [
+      'sdsu_archie' => t('Alegreya, Roboto Condensed, Roboto'),
       'roboto' => t('Roboto Condensed, Roboto'),
       'monserrat_lato' => t('Monserrat, Lato'),
       'alegreya_roboto' => t('Alegreya, Roboto Condensed, Roboto'),

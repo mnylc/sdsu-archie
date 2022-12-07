@@ -60,5 +60,5 @@ sdsu_archie:
   version: VERSION
   css:
     component:
-      fonts/alegreya_roboto.css: {}
+      fonts/sdsu_archie.css: {}
       //fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:400,500,700: { type: external, minified: false }
