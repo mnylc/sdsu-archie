@@ -449,6 +449,7 @@ ul.pagination {
 
 /* SDSU Archie Test Styles */
 
+
 /* Header */
 
 /* Fix: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
@@ -458,6 +459,7 @@ ul.pagination {
     background-color: transparent;
 }
 
+
 /* Homepage */
 
 /* Set type and background color for carousel heading  */
@@ -466,7 +468,8 @@ div > div.carousel-item.active > div > h3 {
     color: #fff;
 }
 
-/* Collection Page */
+
+/* Collection Page - Facets */
 
 /* Remove bullets and default padding from facet link lists */
 /* should we use .facets-widget-links > ul instead? */
@@ -493,13 +496,31 @@ div > div.carousel-item.active > div > h3 {
     }
   }
   
-
 /* Set item count to the right */
 .facet-item__count {
     float: right;
     text-align: right;
     width: 6ch;
 }
+
+
+/* Collection Page - Object Listing */
+
+.field--name-node-title h2 {
+    font-weight: 500;
+    padding: 15px 0;
+}
+
+/* Hide Last Modified date */
+.field--name-node-changed-date {
+    display: none;
+}
+
+.field--name-field-descriptive-metadata p {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
 
 /* Object Page */
 
