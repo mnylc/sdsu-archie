@@ -20,8 +20,10 @@
                 {% if site_logo %}
                     <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top"/>
                 {% endif %}
-                {{ site_name }}
             </a>
+            <div class="site-name">
+                {{ site_name }}
+            </div>
         </div>
     {% endif %}
     {% if site_slogan %}
