@@ -454,9 +454,7 @@ ul.pagination {
 
 /* Fix: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
 
-.site-name-slogan + div {
-    display: flex;
-}
+
 
 .navbar-brand img {
     max-width: 350px;
