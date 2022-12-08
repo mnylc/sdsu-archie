@@ -454,6 +454,15 @@ ul.pagination {
 
 /* Fix: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
 
+.site-name-slogan + div {
+    display: flex;
+}
+
+.navbar-brand img {
+    max-width: 350px;
+    padding-top: 15px;
+}
+
 /* Remove white bg around submit button to allow nav background to show */
 .form-actions {
     background-color: transparent;
@@ -468,6 +477,23 @@ div > div.carousel-item.active > div > h3 {
     color: #fff;
 }
 
+/* Collection Page - Controls Sub-Header and Sub-Footer */
+
+/* move grid/list toggle to right */
+.view-header.row-bootstrap4.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+/* align sub-footer paging controls w/ container margins */
+.js-pager__items.pagination {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* Collection Page - Facets */
 
@@ -504,11 +530,17 @@ div > div.carousel-item.active > div > h3 {
 }
 
 
-/* Collection Page - Object Listing */
+/* Collection Page - List View */
 
 .field--name-node-title h2 {
+    font-size: 1.65em;
     font-weight: 500;
     padding: 15px 0;
+}
+
+/* add spacing between FA icon and header */
+.field--name-node-title h2 > a > i {
+    padding-right: .35em;
 }
 
 /* Hide Last Modified date */
@@ -519,6 +551,22 @@ div > div.carousel-item.active > div > h3 {
 .field--name-field-descriptive-metadata p {
     margin-bottom: 1.5rem;
     line-height: 1.4;
+}
+
+/* Collection Page - Grid View */
+
+/* place thumbnail at the top of each type of card */
+.node.node--type-digital-object.node--view-mode-digital-object-with-thumbnail-for-grid.ds-1col.clearfix,
+.node.node--type-digital-object-collection.node--view-mode-digital-object-with-thumbnail-for-grid.ds-1col.clearfix {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2em;
+}
+
+/* set card h2 size */
+.node.node--type-digital-object.node--view-mode-digital-object-with-thumbnail-for-grid.ds-1col.clearfix h2,
+.node.node--type-digital-object-collection.node--view-mode-digital-object-with-thumbnail-for-grid.ds-1col.clearfix h2 {
+    font-size: 1.35em;
 }
 
 
