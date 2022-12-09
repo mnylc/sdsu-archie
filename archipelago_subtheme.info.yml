@@ -1,6 +1,6 @@
-name: Archipelago Base Theme
+name: Archie 1.0.0
 type: theme
-description: 'Archipelago Bootstrap Theme.'
+description: 'SDSU Archipelago Theme, based on Archipelago Bootstrap theme.'
 core_version_requirement: ^9.3 || ^10
 base theme: bootstrap_barrio
 
