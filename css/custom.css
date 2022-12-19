@@ -496,10 +496,11 @@ div > div.carousel-item.active > div > h3 {
 
 /* Remove bullets and default padding from facet link lists */
 /* should we use .facets-widget-links > ul instead? */
-.facet-inactive.js-facets-links.item-list__links.js-facets-widget {
+.facet-inactive.js-facets-links.item-list__links.js-facets-widget, 
+.facet-active.js-facets-links.item-list__links.js-facets-widget {
     list-style-type: none;
     padding: 0 0;
-  }
+}
 
 /* increase spacing between facet items */
 .facet-item {
@@ -549,6 +550,11 @@ div > div.carousel-item.active > div > h3 {
     margin-bottom: 1.5rem;
     line-height: 1.4;
 }
+
+.layout__region--first {
+    padding-right: 20px;
+}
+
 
 /* Collection Page - Grid View */
 
