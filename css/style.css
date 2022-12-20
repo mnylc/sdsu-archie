@@ -85,7 +85,7 @@ section.region-top-header-form {
   pointer-events: none;
 }
 #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
-  width: 24rem !important;
+  /* width: 24rem !important; */
   cursor: pointer;
   outline: none;
   padding: 6px 15px 6px 32px;
@@ -96,7 +96,7 @@ section.region-top-header-form {
 }
 
 #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input {
-  width: 12rem !important;
+  /* width: 12rem !important; */
   background-color: rgba(255,255,255,1);
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
   -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
