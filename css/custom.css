@@ -448,13 +448,14 @@ ul.pagination {
 
 
 
-/* SDSU Archie Test Styles */
+/* --------------------------------------------------------------------------------
+ SDSU Archie Styles
+ Version 1.0.0
+-------------------------------------------------------------------------------- */
 
+/* Header Region ---------------------------------------- */
 
-/* Header */
-
-/* Fix: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
-
+/* Todo: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
 
 .navbar-brand img {
     max-width: 350px;
@@ -465,6 +466,8 @@ ul.pagination {
 .form-actions {
     background-color: transparent;
 }
+
+/* Override default search input sizing to allow for full width */
 
 .navbar-form, .region-header-form {
     width: 100%;
@@ -485,6 +488,7 @@ ul.pagination {
     max-width: none;
 }
 
+/* Set flex grow, shrink, and basis for form input and submit button */
 .form-row > fieldset.js-form-item {
     flex: 8 0 80%;
 }
@@ -493,11 +497,8 @@ ul.pagination {
     flex: 2 0 20%;
 }
 
-  input#edit-search-api-fulltext--2 {
-    width: 100% !important;
-}
 
-/* Homepage */
+/* Homepage ---------------------------------------- */
 
 /* Set type and background color for carousel heading  */
 div > div.carousel-item.active > div > h3 {
@@ -505,7 +506,10 @@ div > div.carousel-item.active > div > h3 {
     color: #fff;
 }
 
-/* Collection Page - Controls Sub-Header and Sub-Footer */
+
+/* Collection Page ---------------------------------------- */
+
+/* Collection Page - Sub-Header and Sub-Footer */
 
 /* move grid/list toggle to right */
 .view-header.row-bootstrap4.container {
@@ -609,7 +613,7 @@ div > div.carousel-item.active > div > h3 {
 }
 
 
-/* Object Page */
+/* Object Page ---------------------------------------- */
 
 /* Change color of small buttons in sidebar */
 .nav-pills > .nav-item > a.nav-link.active {
