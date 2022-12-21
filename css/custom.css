@@ -508,19 +508,33 @@ ul.pagination {
 }
 
 /* Set hero image dimensions */
-.archie-hero > a > img {
-    max-width: 100%;
-    max-height: 400px; /* need to adjust this value for responsive breakpoints */
-    object-fit: cover;
+
+.archie-hero {
+    height: 400px;
+    clip-path: content-box;
 }
 
+.archie-hero-frame {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+}
 
-/* Set type and background color for carousel heading  */
-div > div.carousel-item.active > div > h3 {
+.archie-hero-caption {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    z-index: 20;
     background: rgb(0 0 0 / .5);;
-    color: #fff;
 }
 
+.archie-hero img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 400px;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    z-index: 10;
+}
 
 /* Collection Page ---------------------------------------- */
 
