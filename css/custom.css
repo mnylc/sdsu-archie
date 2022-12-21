@@ -517,14 +517,20 @@ ul.pagination {
 .archie-hero-frame {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 175px auto auto 1fr;
+}
+
+.archie-hero-frame h1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    z-index: 20;
 }
 
 .archie-hero-caption {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    z-index: 20;
-    background: rgb(0 0 0 / .5);;
+    grid-row: 3 / 4;
+    z-index: 21;
+    background: rgb(255 255 255 / .75);;
 }
 
 .archie-hero img {
@@ -532,7 +538,7 @@ ul.pagination {
     width: 100%;
     min-height: 400px;
     grid-column: 1 / 4;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     z-index: 10;
 }
 
