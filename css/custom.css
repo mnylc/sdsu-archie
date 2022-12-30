@@ -455,7 +455,7 @@ ul.pagination {
 
 /* Header Region ---------------------------------------- */
 
-/* Todo: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
+    /* Todo: logo and nav disappear at 991px, hamburger menu is white on white, clicking on it shows the logo and nav */
 
 .navbar-brand img {
     max-width: 350px;
@@ -477,11 +477,14 @@ ul.pagination {
     padding-bottom: 0;
 }
 
-.form-row {
+form#views-exposed-form-solr-search-content-page-1 > .form-row,
+form#views-exposed-form-solr-search-content-grid > .form-row {
     justify-content: space-between;
 }
 
-.form-row > fieldset, .form-row > div {
+form#views-exposed-form-solr-search-content-page-1 > .form-row > fieldset, 
+form#views-exposed-form-solr-search-content-grid > .form-row > fieldset, 
+.form-row > div {
     padding-right: 5px;
     padding-left: 5px;
     width: auto;
@@ -489,11 +492,13 @@ ul.pagination {
 }
 
 /* Set flex grow, shrink, and basis for form input and submit button */
-.form-row > fieldset.js-form-item {
+form#views-exposed-form-solr-search-content-page-1 > .form-row > fieldset.js-form-item,
+form#views-exposed-form-solr-search-content-grid > .form-row > fieldset.js-form-item {
     flex: 8 0 80%;
 }
 
-.form-row > div.form-actions {
+form#views-exposed-form-solr-search-content-page-1 > .form-row > div.form-actions,
+form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions {
     flex: 2 0 20%;
 }
 
@@ -511,7 +516,7 @@ ul.pagination {
 
 .archie-hero {
     height: 400px;
-    clip-path: content-box;
+    overflow: hidden;
 }
 
 .archie-hero-frame {
@@ -565,7 +570,9 @@ ul.pagination {
 /* Collection Page - Facets */
 
 /* Remove bullets and default padding from facet link lists */
-/* should we use .facets-widget-links > ul instead? */
+
+    /* Todo: should we use .facets-widget-links > ul instead? */
+
 .facet-inactive.js-facets-links.item-list__links.js-facets-widget, 
 .facet-active.js-facets-links.item-list__links.js-facets-widget {
     list-style-type: none;
@@ -650,7 +657,36 @@ ul.pagination {
 
 /* Object Page ---------------------------------------- */
 
-/* Change color of small buttons in sidebar */
-.nav-pills > .nav-item > a.nav-link.active {
-    background-color: #00A39D;
+/* Object Page - 2nd Sidebar */
+
+#sidebar_second .views-element-container {
+    padding: 15px 0;
+}
+
+#sidebar_second .views-element-container h2 {
+    font-size: 1.5em;
+}
+
+#sidebar_second .views-element-container dl > dt {
+    border: none;
+    font-size: 1.0em;
+}
+
+/* Format and align pill buttons */
+
+.list-group .nav-pills {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.list-group .nav-pills .nav-item { 
+    margin-left: -3px;
+}
+.list-group .nav-pills a.nav-link.active {
+    background-color: #008080;
+}
+
+.list-group .nav-pills a.nav-link.active .fa-1x::before {
+    color: #fff;
 }
