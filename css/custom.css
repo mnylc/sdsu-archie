@@ -655,9 +655,32 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
 }
 
 
-/* Object Page ---------------------------------------- */
+/* Digital Object Page ---------------------------------------- */
 
-/* Object Page - 2nd Sidebar */
+main.main-content div.content {
+    padding-top: 0;
+}
+
+.toolbar-wrapper {
+    background-color: #aaa;
+}
+.field.field--name-display-field-copynode-formatted-metadata.field--type-ds.field--label-hidden.field__items {
+    background-color: #333;
+}
+
+/* Digital Object Page - Blockquote */
+
+blockquote.blockquote > .blockquote-footer {
+    font-size: 0.75em;
+    margin-top: 2em !important;
+    margin-bottom: 2em !important;
+}
+
+blockquote.blockquote > .blockquote-footer::before {
+    content: none;
+}
+
+/* Digital Object Page - 2nd Sidebar */
 
 #sidebar_second .views-element-container {
     padding: 15px 0;
