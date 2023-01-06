@@ -98,9 +98,9 @@ pre code {
     background-color: #fff;
 }
 
-#navbar-top div:last-child {
+/* #navbar-top div:last-child {
     margin-left: auto;
-}
+} */
 
 
 .navbar-collapse.collapse.show section.row {
@@ -461,6 +461,24 @@ ul.pagination {
     max-width: 350px;
     padding-top: 15px;
 }
+
+/* align logo to left and nav controls to right */
+.d-flex.flex-column.flex-lg-row.region.region-top-header {
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* set vertical alignment of nav at large breakpoints */
+@media (min-width: 992px) {
+    #block-mainnavigation { 
+        align-self: center;
+    }
+    /* workaround to hide mobile branding */
+    #mobile-brand {
+        display: none;
+    }
+}
+
 
 /* Remove white bg around submit button to allow nav background to show */
 .form-actions {
