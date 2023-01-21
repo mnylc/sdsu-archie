@@ -19,11 +19,11 @@ h2 a {
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'proxima-nova-extra-condensed','Roboto Condensed', sans-serif;
 }
 h3,
 h3 a {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'proxima-nova-extra-condensed','Roboto Condensed', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -32,5 +32,5 @@ body,
 p,
 a,
 li {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'proxima-nova','Roboto', sans-serif;
 }
