@@ -479,6 +479,16 @@ ul.pagination {
     }
 }
 
+/* change style of dropdown menu caret */
+.dropdown-toggle::after {
+    transform: scaleY(-1) rotate(45deg);
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 0;
+    border-bottom: 0;
+    height: 7px;
+    width: 7px;
+}
 
 /* Remove white bg around submit button to allow nav background to show */
 .form-actions {
