@@ -477,12 +477,29 @@ ul.pagination {
     #mobile-brand {
         display: none;
     }
+    /* widen padding between nav links */
+    .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    /* remove border from first nav item */
+    nav.navbar li.nav-item:first-of-type {
+        border-left: none;
+    }
 }
+
+/* restyle default left border on nav links */
+nav.navbar li.nav-item {
+    border-left-width: 1px;
+    border-left-color: #CDCDC8;
+    border-left-style: solid;
+}
+
 
 /* change style of dropdown menu caret */
 .nav-link.dropdown-toggle::after {
     transform: scaleY(-1) rotate(45deg);
-    margin-left: 0.5em;
+    margin-left: 0.75em;
     border-top: 1px solid;
     border-left: 1px solid;
     border-right: 0;
