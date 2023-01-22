@@ -759,7 +759,3 @@ blockquote.blockquote > .blockquote-footer::before {
 .list-group .nav-pills a.nav-link.active .fa-1x::before {
     color: #fff;
 }
-
-/* Temporary: Add Proxima Nova font */
-
-@import url("https://use.typekit.net/bmy2byj.css");
