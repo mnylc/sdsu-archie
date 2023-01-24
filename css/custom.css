@@ -495,6 +495,17 @@ nav.navbar li.nav-item {
     border-left-style: solid;
 }
 
+/* override default theme settings */
+nav > ul > li.active.nav-item > a {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-weight: 700;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #f2f2f2 !important;
+    font-weight: 700;
+}
 
 /* change style of dropdown menu caret */
 .nav-link.dropdown-toggle::after {
