@@ -770,3 +770,13 @@ blockquote.blockquote > .blockquote-footer::before {
 .list-group .nav-pills a.nav-link.active .fa-1x::before {
     color: #fff;
 }
+
+/* Extracted Text Discover Pages ---------------------------------------- */
+
+.search-box h3 {
+    margin-top: 1rem;
+}
+
+.field-content > h5 {
+    margin-top: 1rem;
+}
