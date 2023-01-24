@@ -771,6 +771,17 @@ blockquote.blockquote > .blockquote-footer::before {
     color: #fff;
 }
 
+/* Additional Information accordion button */
+#additionalInformation button {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+/* IIF copy link button */
+.clipboard-copy-button {
+    margin: 0.75em 0;
+}
+
 /* Extracted Text Discover Pages ---------------------------------------- */
 
 .search-box h3 {
