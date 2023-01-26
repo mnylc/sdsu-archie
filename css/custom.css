@@ -578,7 +578,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
 .archie-hero-frame {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1.5fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr auto;
 }
 
 .archie-hero-panel {
@@ -589,13 +589,30 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
     padding: 0.5em;
 }
 
+.archie-hero-panel h1 {
+    margin-top: .5rem;
+}
+
 .archie-hero img {
     object-fit: cover;
     width: 100%;
-    min-height: 600px;
+    max-height: 500px;
     grid-column: 1 / 4;
-    grid-row: 1 / 5;
+    grid-row: 1 / 6;
     z-index: 10;
+}
+
+.archie-hero-caption {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    background: rgb(255 255 255 / .75);
+    z-index: 15;
+}
+
+.archie-hero-caption p {
+    padding: 0.75rem;
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 /* Collection Page ---------------------------------------- */
@@ -802,17 +819,8 @@ ul.sdsu-contact li {
 }
 
 
-/* TODO ITEMS 
+/* Footer ---------------------------------------- */
 
-- mobile: logo placement/sizing
-
-- homepage: caption placement
-- homepage: other elements?
-- font: change heading font to san serif
-- footer: copyright, library info
-
-+ manual images for hero
-+ support link: go to static contact page
-+ menu: hide Extracted Text Discovery
-
-*/
+.site-footer .content {
+    color: #000;
+}
