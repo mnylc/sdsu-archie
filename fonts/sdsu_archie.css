@@ -1,19 +1,19 @@
-/* ---------- SDSU Archie Theme: Alegreya, Roboto Condensed, Roboto ---------- */
+/* ---------- SDSU Archie Theme: Proxima Nova ---------- */
 
 h1,
 h2,
 h1 a,
 h2 a {
-  font-family: 'Alegreya', serif;
+  font-family: 'proxima-nova','Roboto', sans-serif;
 }
 h1,
 h1 a {
-  font-family: 'Alegreya', serif;
+  font-family: 'proxima-nova','Roboto', sans-serif;
   font-weight: 700;
 }
 h2,
 h2 a {
-  font-family: 'Alegreya', serif;
+  font-family: 'proxima-nova','Roboto', sans-serif;
   font-weight: 500;
 }
 h4,
