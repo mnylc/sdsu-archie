@@ -572,33 +572,27 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
 /* Set hero image dimensions */
 
 .archie-hero {
-    height: 400px;
     overflow: hidden;
 }
 
 .archie-hero-frame {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 175px auto auto 1fr;
+    grid-template-rows: 1.5fr auto 1fr;
 }
 
-.archie-hero-frame h1 {
+.archie-hero-panel {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     z-index: 20;
-}
-
-.archie-hero-caption {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    z-index: 21;
-    background: rgb(255 255 255 / .75);;
+    background: rgb(255 255 255 / .75);
+    padding: 0.5em;
 }
 
 .archie-hero img {
     object-fit: cover;
     width: 100%;
-    min-height: 400px;
+    min-height: 600px;
     grid-column: 1 / 4;
     grid-row: 1 / 5;
     z-index: 10;
@@ -661,6 +655,10 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
     width: 6ch;
 }
 
+/* Set active facet(s) to bold */
+.is-active {
+    font-weight: 700;
+}
 
 /* Collection Page - List View */
 
@@ -791,3 +789,30 @@ blockquote.blockquote > .blockquote-footer::before {
 .field-content > h5 {
     margin-top: 1rem;
 }
+
+/* Contact Page ---------------------------------------- */
+
+/* temporary fix - duplicate page header and page title */
+h2.node__title {
+    display: none;
+}
+
+ul.sdsu-contact li {
+    list-style: none;
+}
+
+
+/* TODO ITEMS 
+
+- mobile: logo placement/sizing
+
+- homepage: caption placement
+- homepage: other elements?
+- font: change heading font to san serif
+- footer: copyright, library info
+
++ manual images for hero
++ support link: go to static contact page
++ menu: hide Extracted Text Discovery
+
+*/
