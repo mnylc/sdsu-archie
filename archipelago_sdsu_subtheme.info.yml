@@ -3,6 +3,7 @@ type: theme
 description: 'SDSU Archipelago Theme, based on Archipelago Bootstrap theme.'
 core_version_requirement: ^9.4 || ^10
 base theme: bootstrap_barrio
+logo: 'img/sdsu-library-logo.png'
 
 libraries:
   - archipelago_sdsu_subtheme/bootstrap_cdn
