@@ -1,16 +1,16 @@
-name: Archie 1.0.0
+name: Archie 1.1.0
 type: theme
 description: 'SDSU Archipelago Theme, based on Archipelago Bootstrap theme.'
-core_version_requirement: ^9.3 || ^10
+core_version_requirement: ^9.4 || ^10
 base theme: bootstrap_barrio
 
 libraries:
-  - archipelago_subtheme/bootstrap_cdn
-  - archipelago_subtheme/global-styling
-  - archipelago_subtheme/fonts
+  - archipelago_sdsu_subtheme/bootstrap_cdn
+  - archipelago_sdsu_subtheme/global-styling
+  - archipelago_sdsu_subtheme/fonts
 
 libraries-override:
-  bootstrap_barrio/bootstrap_cdn: archipelago_subtheme/bootstrap_cdn
+  bootstrap_barrio/bootstrap_cdn: archipelago_sdsu_subtheme/bootstrap_cdn
 
 regions:
   top_header: 'Top Header'

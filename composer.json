@@ -1,5 +1,5 @@
 {
-    "name": "archipelago/archipelago_subtheme",
+    "name": "archipelago/archipelago_sdsu_subtheme",
     "description": "Bare Bone Bootstrap4 to be further extended by nice people",
     "type": "drupal-theme",
     "license": "GPL-2.0+",
@@ -10,9 +10,15 @@
             "email": "dpino@metro.org",
             "homepage": "https://github.com/DiegoPino",
             "role": "Owner"
+        },
+        {
+            "name": "Leomarc Pastor",
+            "email": "mpastor@sdsu.edu",
+            "homepage": "https://github.com/leomarc",
+            "role": "Developer"
         }
     ],
     "require": {
-        "drupal/bootstrap_barrio": "^5.5"
+        "drupal/bootstrap_barrio": "^5"
     }
 }
