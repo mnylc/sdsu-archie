@@ -79,7 +79,9 @@
 
                 <div id="mobile-brand">
                   <a href="/" title="Home" rel="home" class="navbar-brand">
-                    <img src="/sites/default/files/sdsu-library-logo.png" alt="Home">
+                    {% if site_logo %}
+                      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top"/>
+                    {% endif %}
                   </a>
                 </div>
 
