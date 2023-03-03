@@ -870,3 +870,8 @@ ul.sdsu-contact li {
 #page .sidebar .block {
   padding: 0.375rem 0.375rem;
 }
+
+.block .view-header.row-bootstrap4.container {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
