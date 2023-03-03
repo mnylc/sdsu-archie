@@ -55,8 +55,8 @@ pre code {
 }
 
 .nav-item .fa-li {
-    left: 0em !important;
-    top: 0.5em !important;;
+    left: -0.5em !important;
+    top: 0.5em !important;
     position: absolute;
     text-align: center;
     width: 2em;
