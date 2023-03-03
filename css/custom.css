@@ -849,7 +849,7 @@ ul.sdsu-contact li {
   --bs-accordion-border-radius: 0;
 }
 
-.block-facets .accordion .accordion-button {
+.block-facets .accordion-button {
   padding: 0.5rem 0.625rem
 }
 
