@@ -62,5 +62,5 @@ sdsu_archie:
     component:
       fonts/sdsu_archie.css: {}
       //fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:400,500,700: { type: external, minified: false }
-      //fonts.cdnfonts.com/css/proxima-nova-condensed?styles=53292,53296,53290: { type: external, minified: false }
+      //fonts.cdnfonts.com/css/proxima-nova-condensed?styles=53293,53297,53291: { type: external, minified: false }
       //fonts.cdnfonts.com/css/proxima-nova?styles=26985,26982: { type: external, minified: false }
