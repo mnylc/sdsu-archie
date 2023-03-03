@@ -860,6 +860,11 @@ ul.sdsu-contact li {
   border-bottom: 0 none;
 }
 
+.block-facets accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: transparent;
+}
+
 .block-facets .accordion-button span {
   font-size: 1.25em;
   font-family: 'Proxima Nova','Roboto', sans-serif;
