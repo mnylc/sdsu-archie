@@ -470,7 +470,7 @@ ul.pagination {
 
 /* set vertical alignment of nav at large breakpoints */
 @media (min-width: 992px) {
-    #block-mainnavigation { 
+    #block-mainnavigation {
         align-self: center;
     }
     /* workaround to hide mobile branding */
@@ -539,8 +539,8 @@ form#views-exposed-form-solr-search-content-grid > .form-row {
     justify-content: space-between;
 }
 
-form#views-exposed-form-solr-search-content-page-1 > .form-row > fieldset, 
-form#views-exposed-form-solr-search-content-grid > .form-row > fieldset, 
+form#views-exposed-form-solr-search-content-page-1 > .form-row > fieldset,
+form#views-exposed-form-solr-search-content-grid > .form-row > fieldset,
 .form-row > div {
     padding-right: 5px;
     padding-left: 5px;
@@ -614,6 +614,10 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
     margin-bottom: 0;
     font-weight: 700;
 }
+.archie-hero .archie-hero-color-block {
+  opacity: 0.85;
+  background-color: #A6192E;
+}
 
 /* Collection Page ---------------------------------------- */
 
@@ -641,7 +645,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
 
     /* Todo: should we use .facets-widget-links > ul instead? */
 
-.facet-inactive.js-facets-links.item-list__links.js-facets-widget, 
+.facet-inactive.js-facets-links.item-list__links.js-facets-widget,
 .facet-active.js-facets-links.item-list__links.js-facets-widget {
     list-style-type: none;
     padding: 0 0;
@@ -664,7 +668,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
         width: 70%;
     }
   }
-  
+
 /* Set item count to the right */
 .facet-item__count {
     float: right;
@@ -775,7 +779,7 @@ blockquote.blockquote > .blockquote-footer::before {
     align-items: center;
 }
 
-.list-group .nav-pills .nav-item { 
+.list-group .nav-pills .nav-item {
     margin-left: -3px;
 }
 .list-group .nav-pills a.nav-link.active {
