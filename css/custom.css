@@ -880,3 +880,14 @@ ul.sdsu-contact li {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
+/* Cards */
+.path-frontpage .card-img {
+  height: 10vw;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.path-frontpage .card-body {
+  height:12rem;
+}
