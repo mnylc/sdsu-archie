@@ -883,11 +883,13 @@ ul.sdsu-contact li {
 
 /* Cards */
 .path-frontpage .card-img {
-  height: 10vw;
+  height: 12vw;
   overflow: hidden;
   object-fit: cover;
 }
 
 .path-frontpage .card-body {
-  height:12rem;
+  min-height:18rem;
+  max-height:18rem;
+  word-break: break-word;
 }
