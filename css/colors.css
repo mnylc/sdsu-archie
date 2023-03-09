@@ -288,7 +288,7 @@ input.form-control.button:hover, input.form-control.button:focus {
 
 .block-facets .accordion-button:not(.collapsed) {
   color: #007bff !important;
-  background-color:#0256b1 !important;
+  background-color: #2b3951; !important;
 }
 
 .block-facets .accordion-button:not(.collapsed)::after {
