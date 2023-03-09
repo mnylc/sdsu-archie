@@ -79,6 +79,7 @@ pre code {
 
 #navbar-main {
     padding: 0px;
+    min-height: 4rem;
 }
 
 .navbar-dark .navbar-brand {
@@ -881,7 +882,7 @@ ul.sdsu-contact li {
 
 /* Cards */
 .path-frontpage .card-img {
-  height: 12vw;
+  height: 10vw;
   overflow: hidden;
   object-fit: cover;
 }
