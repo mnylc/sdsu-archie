@@ -318,6 +318,10 @@ p.lead-bottom {
     bottom: 0;
     min-height: 350px;
     padding: 2rem 1rem;
+    background-image: url("../img/pattern_bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
 }
 
 .site-footer .block {
@@ -616,8 +620,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
     font-weight: 700;
 }
 .archie-hero .archie-hero-color-block {
-  opacity: 0.85;
-  background-color: #A6192E;
+  background-color: rgb(166 25 46 / .85);
 }
 
 /* Collection Page ---------------------------------------- */
@@ -858,11 +861,6 @@ ul.sdsu-contact li {
   border-left: 0 none;
   border-right: 0 none;
   border-bottom: 0 none;
-}
-
-.block-facets accordion-button:not(.collapsed) {
-  color: inherit;
-  background-color: transparent;
 }
 
 .block-facets .accordion-button span {
