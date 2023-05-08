@@ -629,7 +629,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
 }
 
 .archie-hero .archie-hero-color-block {
-  background-color: rgb(166 25 46 / .85);
+  background-color: rgb(166, 25, 46);
 }
 
 /* Collection Page ---------------------------------------- */
@@ -890,11 +890,12 @@ ul.sdsu-contact li {
 
 .card {
   box-shadow: 0px 0px 0px 0 rgba(242,242,242,.25);
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .card:hover {
   box-shadow: 1px 1px 8px 0 rgba(242,242,242,.15);
+  transform:scale(1.1);
 }
 
 
@@ -909,4 +910,25 @@ ul.sdsu-contact li {
   min-height:18rem;
   max-height:18rem;
   word-break: break-word;
+}
+
+/* Colecciones Mexicanas */
+div.hero-fixed {
+  position: fixed;
+  right: 0rem;
+  top: 5.3rem;
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem 1rem 1rem 2.5rem;
+  background-color: rgb(166, 25, 46);
+  /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 3% 25%); */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 20% 94%, 3% 25%);
+  background-image: url(../img/pattern_bottom.png);
+  background-repeat: repeat;
+  background-position: -5rem -2rem;
+}
+div.hero-fixed a, div.hero-fixed a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
 }
