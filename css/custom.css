@@ -921,14 +921,12 @@ div.hero-fixed {
   width: 10rem;
   padding: 1rem 1rem 1rem 2.5rem;
   background-color: rgb(166, 25, 46);
-  /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 3% 25%); */
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 20% 94%, 3% 25%);
-  background-image: url(../img/pattern_bottom.png);
-  background-repeat: repeat;
   background-position: -5rem -2rem;
 }
 div.hero-fixed a, div.hero-fixed a:hover {
   text-decoration: none;
-  color: white;
+  color: white !important;
+  font-size: 1.1rem;
   font-weight: 900;
 }
