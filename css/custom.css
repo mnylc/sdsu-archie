@@ -936,11 +936,11 @@ div.hero-fixed {
 }
 div.hero-fixed a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-size: 1.1rem;
   font-weight: 900;
   display: block;
 }
 div.hero-fixed a:hover {
-  color:whitesmoke;
+  color:whitesmoke !important;
 }
