@@ -131,7 +131,7 @@ div > div.carousel-item.active > div > h3 {
 .link {
     color: #4b82bf !important;
 }
-a:not(.toolbar-item) {
+a:not(.toolbar-item):not(.btn)  {
     color: #4b82bf !important;
 }
 
