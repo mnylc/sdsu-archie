@@ -9,8 +9,9 @@
 
   Drupal.behaviors.archipelago_subtheme = {
     attach: function (context, settings) {
-      $(context).find('div.view').once('archipelago-subtheme-global-glide', function () {
-        let $glideElement = document.querySelector(".glide");
+
+      $('div.view', context).once('archipelago-subtheme-global-glide', function () {
+        let $glideElement = context.querySelector(".glide");
         if ($glideElement && Glide !== undefined) {
           const GlideInstance = new Glide('.glide',{
               focusAt: 'center',
