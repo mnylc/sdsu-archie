@@ -548,8 +548,8 @@ form#views-exposed-form-solr-search-content-grid > .form-row {
 form#views-exposed-form-solr-search-content-page-1 > .form-row > fieldset,
 form#views-exposed-form-solr-search-content-grid > .form-row > fieldset,
 .form-row > div {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 0;
+    padding-left: 0;
     width: auto;
     max-width: none;
 }
