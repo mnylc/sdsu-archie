@@ -12,7 +12,10 @@
       $(context).find('div.view').once('archipelago-subtheme-global-glide').each(function () {
         let $glideElement = document.querySelector(".glide");
         if ($glideElement && Glide !== undefined) {
-          const GlideInstance = new Glide('.glide').mount();
+          const GlideInstance = new Glide('.glide',{
+              focusAt: 'center',
+              perView: 4
+          }).mount();
         }
       });
       $(context).find('body').once('archipelago-subtheme-global').each(function () {
