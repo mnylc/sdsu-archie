@@ -9,15 +9,17 @@
 
   Drupal.behaviors.archipelago_subtheme = {
     attach: function (context, settings) {
-      $(context).find('div.view.search-box-with-glide').once('archipelago-subtheme-global-glide').each(function () {
-        let $glideElement = context.querySelector(".glide");
-        if ($glideElement && Glide !== undefined) {
-          const GlideInstance = new Glide('.glide',{
+      if ($(context).hasClass('search-box-with-glide')) {
+        $(context).once('archipelago-subtheme-global-glide', function () {
+          let $glideElement = context.querySelector(".glide");
+          if ($glideElement && Glide !== undefined) {
+            new Glide('.glide', {
               focusAt: 'center',
               perView: 4
-          }).mount();
-        }
-      });
+            }).mount();
+          }
+        });
+      }
       $(context).find('body').once('archipelago-subtheme-global').each(function () {
           let $glideElement = document.querySelector(".glide");
           if ($glideElement && Glide !== undefined) {
