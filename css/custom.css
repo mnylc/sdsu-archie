@@ -895,7 +895,7 @@ ul.sdsu-contact li {
 
 .card:hover {
   box-shadow: 1px 1px 8px 0 rgba(242,242,242,.15);
-  transform:scale(1.1);
+  transform:scale(1.05);
 }
 
 

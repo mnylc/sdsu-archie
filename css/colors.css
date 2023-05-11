@@ -20,7 +20,9 @@ body {
 }
 
 
-
+.card-img {
+  background-color: #2b3951;
+}
 
 .tabs ul.primary li a.is-active {
     background-color: #ffffff;
