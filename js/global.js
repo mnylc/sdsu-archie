@@ -1,36 +1,44 @@
 /**
-* @file
-* Global utilities.
-*
-*/
+ * @file
+ * Global utilities.
+ *
+ */
 (function ($, Drupal) {
 
-    'use strict';
+  'use strict';
 
-    Drupal.behaviors.archipelago_subtheme = {
-        attach: function (context, settings) {
-            $(context).find('body').once('archipelago-subtheme-global').each(function () {
-
-                window.addEventListener('resize', function(event) {
-                    // de-collapses if collapsed and media query restores large viewport.
-                    let MOBILE_WIDTH = 992;
-                    if ($(window).width() >= MOBILE_WIDTH) {
-                        $('.navbar-collapse.collapse.show').removeClass('show');
-                    }
-                });
-
-                // Triggers admin toolbar offset on page load
-                if (context === document) {
-                    new Glide('.glide').mount();
-                    $(context).on("drupalViewportOffsetChange.toolbar", function (event, offsets) {
-                        let $body = $("body");
-                        if ($body.length > 0 && offsets.top > 0 && $body.css('padding-top') !== offsets.top) {
-                            $body.css("padding-top", offsets.top);
-                        }
-                    });
-                }
+  Drupal.behaviors.archipelago_subtheme = {
+    attach: function (context, settings) {
+      $(context).find('div.view[data-once="ajax-pager"]').once('archipelago-subtheme-global-glide').each(function () {
+        let $glideElement = document.querySelector(".glide");
+        if ($glideElement && Glide !== undefined) {
+          const Glide = new Glide('.glide').mount();
+        }
+      });
+      $(context).find('body').once('archipelago-subtheme-global').each(function () {
+          let $glideElement = document.querySelector(".glide");
+          if ($glideElement) {
+            const Glide = new Glide('.glide').mount();
+          }
+          window.addEventListener('resize', function(event) {
+            // de-collapses if collapsed and media query restores large viewport.
+            let MOBILE_WIDTH = 992;
+            if ($(window).width() >= MOBILE_WIDTH) {
+              $('.navbar-collapse.collapse.show').removeClass('show');
             }
-        );
+          });
+
+          // Triggers admin toolbar offset on page load
+          if (context === document) {
+            $(context).on("drupalViewportOffsetChange.toolbar", function (event, offsets) {
+              let $body = $("body");
+              if ($body.length > 0 && offsets.top > 0 && $body.css('padding-top') !== offsets.top) {
+                $body.css("padding-top", offsets.top);
+              }
+            });
+          }
+        }
+      );
     }
-}
+  }
 })(jQuery, Drupal, Glide);
