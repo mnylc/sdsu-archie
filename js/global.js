@@ -10,10 +10,10 @@
   Drupal.behaviors.archipelago_subtheme = {
     attach: function (context, settings) {
 
-      $('div.view', context).once('archipelago-subtheme-global-glide', function () {
+      $('div.view.search-box-with-glide', context).once('archipelago-subtheme-global-glide', function () {
         let $glideElement = context.querySelector(".glide");
         if ($glideElement && Glide !== undefined) {
-          const GlideInstance = new Glide('.glide',{
+          const GlideInstanceSearch = new Glide('.glide',{
               focusAt: 'center',
               perView: 4
           }).mount();
