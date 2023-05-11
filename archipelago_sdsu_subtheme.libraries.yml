@@ -5,6 +5,7 @@ global-styling:
     js/global.js: {}
   css:
     component:
+      https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.core.min.css: {type: external, minified: true }
       css/style.css: {}
       css/colors.css: {}
       css/custom.css: {}
