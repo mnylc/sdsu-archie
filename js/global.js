@@ -9,7 +9,7 @@
 
   Drupal.behaviors.archipelago_subtheme = {
     attach: function (context, settings) {
-      $(context).find('div.view').once('archipelago-subtheme-global-glide').each(function () {
+      $(context).find('div.view').once('archipelago-subtheme-global-glide', function () {
         let $glideElement = document.querySelector(".glide");
         if ($glideElement && Glide !== undefined) {
           const GlideInstance = new Glide('.glide',{
