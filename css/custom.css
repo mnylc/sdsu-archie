@@ -901,7 +901,7 @@ ul.sdsu-contact li {
 
 /* Cards */
 .card-img {
-  height: 8vw;
+  height: 10vh;
   overflow: hidden;
   object-fit: cover;
 }
