@@ -132,7 +132,7 @@ div > div.carousel-item.active > div > h3 {
     color: #4b82bf !important;
 }
 a:not(.toolbar-item):not(.btn)  {
-    color: #4b82bf !important;
+    color: #4b82bf;
 }
 
 
