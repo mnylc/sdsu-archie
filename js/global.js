@@ -17,8 +17,8 @@
       });
       $(context).find('body').once('archipelago-subtheme-global').each(function () {
           let $glideElement = document.querySelector(".glide");
-          if ($glideElement) {
-            const GlideInstance = new Glide('.glide').mount();
+          if ($glideElement && Glide !== undefined) {
+            const GlideInstanceBody = new Glide('.glide').mount();
           }
           window.addEventListener('resize', function(event) {
             // de-collapses if collapsed and media query restores large viewport.
