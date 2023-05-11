@@ -900,16 +900,23 @@ ul.sdsu-contact li {
 
 
 /* Cards */
-.path-frontpage .card-img {
+.card-img {
   height: 8vw;
   overflow: hidden;
   object-fit: cover;
 }
 
-.path-frontpage .card-body {
+.card-body {
   min-height:18rem;
   max-height:18rem;
   word-break: break-word;
+}
+
+.card-text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow:hidden;
 }
 
 /* Colecciones Mexicanas */
