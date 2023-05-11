@@ -1,8 +1,8 @@
 global-styling:
   version: VERSION
   js:
+    https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.min.js: {type: external, minified: true }
     js/global.js: {}
-    //unpkg.com/@glidejs/glide@3.6.0/dist/glide.min.js: {type: external, minified: true }
   css:
     component:
       css/style.css: {}
