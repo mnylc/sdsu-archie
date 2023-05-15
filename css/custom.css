@@ -558,6 +558,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > fieldset,
 form#views-exposed-form-solr-search-content-page-1 > .form-row > fieldset.js-form-item,
 form#views-exposed-form-solr-search-content-grid > .form-row > fieldset.js-form-item {
   /* flex: 8 0 80%; */
+  flex: 1;
 }
 
 form#views-exposed-form-solr-search-content-page-1 > .form-row > div.form-actions,
