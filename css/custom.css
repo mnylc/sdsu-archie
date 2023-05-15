@@ -629,7 +629,7 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
 }
 
 .archie-hero .archie-hero-color-block {
-  background-color: rgb(166, 25, 46);
+  background-color: rgb(166 25 46 / .85);
 }
 
 /* Collection Page ---------------------------------------- */
