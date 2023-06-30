@@ -507,6 +507,10 @@ nav > ul > li.active.nav-item > a {
     border-color: transparent !important;
     font-weight: 700;
 }
+/* override default theme settings for header */
+#header nav > ul > li.active.nav-item > a {
+  background-color: transparent !important;
+}
 
 .dropdown-item.active, .dropdown-item:active {
     background-color: #f2f2f2 !important;
