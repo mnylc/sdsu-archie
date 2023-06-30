@@ -138,6 +138,8 @@ a:not(.toolbar-item):not(.btn)  {
 
 a:not(.toolbar-item):hover,
 a:not(.toolbar-item):focus,
+a:not(.btn):hover,
+a:not(.btn):focus,
 .link:hover,
 .link:focus {
     color: #4b82bf !important;

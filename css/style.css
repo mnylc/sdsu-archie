@@ -36,13 +36,27 @@ section.region-top-header-form {
   text-decoration: none;
 }
 #main-wrapper a{
-  text-decoration: underline;
   text-decoration-thickness: 0.05rem;
   text-decoration-color: rgba(var(--bs-body-color), 0.7) !important;
 }
 
-#main-wrapper a:hover{
+#main-wrapper a.btn {
+  text-decoration: none;
+}
+/* No underline for buttons that are links */
+#main-wrapper a:not(.btn) {
   text-decoration: underline;
+}
+/* No underline for buttons that are links */
+#main-wrapper a:hover:not(.btn) {
+  text-decoration: underline;
+}
+
+#main-wrapper a:focus:not(.btn) {
+  text-decoration: underline;
+}
+
+#main-wrapper a:hover{
   text-decoration-thickness: 0.2rem;
   text-decoration-color: var(--bs-link-color) !important;
 }
