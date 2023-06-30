@@ -82,6 +82,10 @@ section.region-top-header-form {
   display:none
 }
 
+/* Exposed Solr Search Form SPA and others */
+.views-exposed-form .js-form-item-search-api-fulltext label {
+  display:none
+}
 
 
 #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete:before, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete:before {
