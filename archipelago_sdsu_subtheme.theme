@@ -77,7 +77,6 @@ function archipelago_sdsu_subtheme_form_views_exposed_form_alter(&$form, \Drupal
  * Implements hook_preprocess_HOOK() for menu.html.twig.
  */
 function archipelago_sdsu_subtheme_preprocess_page(&$variables) {
-  error_log('runs archipelago_sdsu_subtheme_preprocess_page');
   // We need the switching classes for navigation toogle
   // Also on the navbar_top_attributes.
   switch (theme_get_setting('bootstrap_barrio_navbar_toggle')) {
