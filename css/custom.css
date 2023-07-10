@@ -906,7 +906,7 @@ ul.sdsu-contact li {
 
 /* Cards */
 .card-img {
-  height: 10vh;
+  height: 15rem;
   overflow: hidden;
   object-fit: cover;
 }
@@ -917,9 +917,47 @@ ul.sdsu-contact li {
   word-break: break-word;
 }
 
+.path-frontpage .card-body {
+  min-height: 6rem;
+  height: auto;
+  word-break: break-word;
+  padding: 1rem 0;
+}
+
+.path-frontpage .card-title {
+  padding: 0 1rem;
+}
+
+
+.path-frontpage .card:hover .card-text {
+  position:absolute;
+  pointer-events: auto;
+  opacity: 1;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.path-frontpage .card:hover .card-img {
+  opacity: 0.85;
+}
+
+.path-frontpage .card-text {
+  padding: 1rem 1rem;
+  position:absolute;
+  top: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  height: 15rem;
+  transition: all 0.3s;
+  width:100%;
+}
+
+
 .card-text p {
   display: -webkit-box;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   overflow:hidden;
 }
@@ -937,8 +975,14 @@ div.hero-fixed {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 20% 94%, 3% 25%);
   background-position: -5rem -2rem;
   text-align-last: center;
-
 }
+
+@media (min-width: 576px) {
+  div.hero-fixed {
+    top: 0rem;
+  }
+}
+
 div.hero-fixed a {
   text-decoration: none;
   color: white !important;
