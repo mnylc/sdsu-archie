@@ -29,6 +29,9 @@ regions:
   content: 'Content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
+  content_bottom: 'Content Bottom'
+  sidebar_first_bottom: 'Sidebar bottom first'
+  sidebar_second_bottom: 'Sidebar bottom second'
   featured_bottom_first: 'Featured bottom first'
   featured_bottom_second: 'Featured bottom second'
   featured_bottom_third: 'Featured bottom third'
@@ -37,5 +40,4 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
-
 
