@@ -977,16 +977,15 @@ div.hero-fixed {
   text-align-last: center;
 }
 
-@media (max-width: 576px) {
-  div.hero-fixed {
+.offcanvas.show div.hero-fixed {
     top: 30vh;
+    right: 0rem;
   }
   /* restyle default left border on nav links */
-  nav.navbar li.nav-item {
+.offcanvas.show nav.navbar li.nav-item {
     border-left-width: 0;
     border-left-color: transparent;
     border-left-style: none;
-  }
 }
 
 div.hero-fixed a {
