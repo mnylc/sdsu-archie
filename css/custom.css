@@ -498,6 +498,7 @@ nav.navbar li.nav-item {
     border-left-width: 1px;
     border-left-color: #CDCDC8;
     border-left-style: solid;
+    align-self: flex-start;
 }
 
 /* override default theme settings */
