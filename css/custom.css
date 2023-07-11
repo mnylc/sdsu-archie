@@ -977,7 +977,7 @@ div.hero-fixed {
   text-align-last: center;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   div.hero-fixed {
     top: 30vh;
   }
