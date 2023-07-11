@@ -11,7 +11,7 @@ body {
 
 body.path-frontpage {
     /* Margin bottom by footer height - none on front page */
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 
@@ -71,14 +71,14 @@ pre code {
 
 #navbar-top .form-actions {
   background-color: transparent;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /**menu and nav styles**/
 
 #navbar-main {
-    padding: 0px;
+    padding: 0;
     min-height: 4rem;
 }
 
@@ -86,7 +86,6 @@ pre code {
     color: #fff;
     font-weight: 100;
     font-size: 1.5rem;
-    font-weight: 100;
 }
 
 .nav.navbar-nav {
@@ -982,10 +981,8 @@ div.hero-fixed {
     right: 0rem;
   }
   /* restyle default left border on nav links */
-.offcanvas.show nav.navbar li.nav-item {
-    border-left-width: 0;
-    border-left-color: transparent;
-    border-left-style: none;
+.offcanvas.show li.nav-item {
+   border-left:none;
 }
 
 div.hero-fixed a {
@@ -1072,4 +1069,13 @@ a.advanced-search-link:hover {
 }
 :root  #page .advanced-search-box .form-actions.mb-3 {
   margin-top: 1rem;
+}
+
+/* Attempt to hide first sidebar IF there is no content */
+/* This works only on modern Browsers */
+/* By default, if no content the theme will create an <aside> tag
+ but might content spaces. If content, inside the aside there will be <div>(s)
+ */
+#sidebar_first:not(#sidebar_first:has(div)) {
+  display: none;
 }
