@@ -1003,7 +1003,21 @@ div.hero-fixed a:hover {
 
 /* Advanced Search */
 
+/* link */
+a.advanced-search-link {
+  padding: .375rem .75rem;
+  display: inline-block;
+}
+.archie-hero a.advanced-search-link {
+ color:white;
+}
 
+a.advanced-search-link:hover {
+  text-decoration-color: var(--bs-link-color) !important;
+  text-decoration: underline;
+}
+
+/* buttons and forms */
 .visually-hidden, :root .views-exposed-form.bef-exposed-form label, :root  #page .advanced-search-box .views-exposed-form .form-row .fieldset-wrapper label, :root .view-header a.views-display-link,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
