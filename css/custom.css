@@ -935,7 +935,7 @@ ul.sdsu-contact li {
   opacity: 1;
   top: 0;
   background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 
@@ -949,8 +949,8 @@ ul.sdsu-contact li {
   top: 1rem;
   opacity: 0;
   pointer-events: none;
-  height: 15rem;
-  transition: all 0.3s;
+  height: 15.275rem;
+  transition: all 0.2s;
   width:100%;
 }
 
@@ -979,7 +979,13 @@ div.hero-fixed {
 
 @media (min-width: 576px) {
   div.hero-fixed {
-    top: 0rem;
+    top: 30vh;
+  }
+  /* restyle default left border on nav links */
+  nav.navbar li.nav-item {
+    border-left-width: 0;
+    border-left-color: transparent;
+    border-left-style: none;
   }
 }
 
