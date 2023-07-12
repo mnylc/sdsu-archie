@@ -707,6 +707,11 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
     padding: 15px 0;
 }
 
+/* Remove padding on title when its in the second col */
+#page .layout--twocol .field--name-node-title h2 {
+  padding-top: 0;
+}
+
 /* add spacing between FA icon and header */
 .field--name-node-title h2 > a > i {
     padding-right: .35em;
