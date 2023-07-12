@@ -726,6 +726,15 @@ form#views-exposed-form-solr-search-content-grid > .form-row > div.form-actions 
     padding-right: 20px;
 }
 
+/* Override the two colum layout to be 35% and 65% */
+@media screen and (min-width: 40em) {
+  #page .layout--twocol > .layout__region--first {
+    flex: 0 1 35%;
+  }
+  #page .layout--twocol > .layout__region--second {
+    flex: 0 1 65%;
+  }
+}
 
 /* Collection Page - Grid View */
 
