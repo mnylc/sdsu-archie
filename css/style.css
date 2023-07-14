@@ -88,7 +88,7 @@ section.region-top-header-form {
 }
 
 
-.views-exposed-form fieldset.form-type-search-api-autocomplete input[type="text"]:not(.visually-hidden)::-webkit-input-placeholder:before {
+.views-exposed-form fieldset.form-type-search-api-autocomplete input[type="text"]:not(.visually-hidden)::-webkit-input-placeholder::before {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -103,7 +103,7 @@ section.region-top-header-form {
   pointer-events: none;
 }
 
-.views-exposed-form fieldset.form-type-search-api-autocomplete input[type="text"]:not(.visually-hidden)::-moz-placeholder{
+.views-exposed-form fieldset.form-type-search-api-autocomplete input[type="text"]:not(.visually-hidden)::-moz-placeholder::before{
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -118,7 +118,7 @@ section.region-top-header-form {
   pointer-events: none;
 }
 
-.views-exposed-form fieldset.form-type-search-api-autocomplete input[type="text"]:not(.visually-hidden)::-ms-input-placeholder{
+.views-exposed-form fieldset.form-type-search-api-autocomplete input[type="text"]:not(.visually-hidden)::-ms-input-placeholder::before{
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
