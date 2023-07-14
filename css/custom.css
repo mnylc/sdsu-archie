@@ -103,6 +103,12 @@ pre code {
     margin-left: auto;
 } */
 
+.path-frontpage input[data-drupal-selector="edit-search-api-fulltext"] {
+  flex-grow: 1 !important;
+}
+
+
+
 
 .navbar-collapse.collapse.show section.row {
     flex-flow: column;
