@@ -544,11 +544,11 @@ nav > ul > li.active.nav-item > a {
     padding-bottom: 0;
 }
 
-form.views-exposed-form > .form-row {
+.views-exposed-form > .form-row {
     justify-content: space-between;
 }
 
-form.views-exposed-form > .form-row > fieldset,
+.views-exposed-form > .form-row > fieldset,
 .form-row > div {
     padding-right: 0;
     padding-left: 0;
@@ -557,12 +557,12 @@ form.views-exposed-form > .form-row > fieldset,
 }
 
 /* Set flex grow, shrink, and basis for form input and submit button */
-form.views-exposed-form > .form-row > fieldset.js-form-item {
+.views-exposed-form > .form-row > fieldset.js-form-item {
   /* flex: 8 0 80%; */
   flex: 1;
 }
 
-form.views-exposed-form > .form-row > div.form-actions {
+.views-exposed-form > .form-row > div.form-actions {
   /* flex: 2 0 20%; */
 }
 

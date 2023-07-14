@@ -78,7 +78,7 @@ section.region-top-header-form {
 
 /* Exposed Solr Search Form */
 
-form.views-exposed-form label, form.views-exposed-form label  {
+.views-exposed-form label {
   display:none
 }
 
@@ -88,7 +88,7 @@ form.views-exposed-form label, form.views-exposed-form label  {
 }
 
 
-form.views-exposed-form fieldset.form-type-search-api-autocomplete:before {
+.views-exposed-form fieldset.form-type-search-api-autocomplete:before {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
@@ -102,7 +102,7 @@ form.views-exposed-form fieldset.form-type-search-api-autocomplete:before {
   padding:4px 6px 8px 6px;
   pointer-events: none;
 }
-form.views-exposed-form:focus-within fieldset.form-type-search-api-autocomplete input {
+.views-exposed-form:focus-within fieldset.form-type-search-api-autocomplete input {
   /* width: 24rem !important; */
   cursor: pointer;
   outline: none;
@@ -113,7 +113,7 @@ form.views-exposed-form:focus-within fieldset.form-type-search-api-autocomplete 
   background-color: #fff;
 }
 
-form.views-exposed-form fieldset.form-type-search-api-autocomplete input {
+.views-exposed-form fieldset.form-type-search-api-autocomplete input {
   /* width: 12rem !important; */
   background-color: rgba(255,255,255,1);
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
