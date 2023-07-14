@@ -556,10 +556,6 @@ nav > ul > li.active.nav-item > a {
     padding-bottom: 0;
 }
 
-.views-exposed-form > .form-row {
-    justify-content: space-between;
-}
-
 .views-exposed-form > .form-row > fieldset,
 .form-row > div {
     padding-right: 0;
