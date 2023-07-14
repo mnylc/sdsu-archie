@@ -564,17 +564,6 @@ nav > ul > li.active.nav-item > a {
     max-width: none;
 }
 
-/* Set flex grow, shrink, and basis for form input and submit button */
-.views-exposed-form > .form-row > fieldset.js-form-item {
-  /* flex: 8 0 80%; */
-  flex: 1;
-}
-
-.views-exposed-form > .form-row > div.form-actions {
-  /* flex: 2 0 20%; */
-}
-
-
 /* Homepage ---------------------------------------- */
 
 /* Change banner container width to go full-width */
