@@ -173,12 +173,12 @@ pre code {
         align-items: flex-start;
     }
 
-    .views-exposed-form:focus-within fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid:focus-within fieldset.form-type-search-api-autocomplete input {
+    .views-exposed-form:focus-within fieldset.form-type-search-api-autocomplete input {
         width: 100% !important;
         flex: 1;
         transition: none !important;
     }
-    .views-exposed-form fieldset.form-type-search-api-autocomplete input, #views-exposed-form-solr-search-content-grid fieldset.form-type-search-api-autocomplete input {
+    .views-exposed-form fieldset.form-type-search-api-autocomplete input {
         transition: none !important;
         width: 100% !important;
     }
