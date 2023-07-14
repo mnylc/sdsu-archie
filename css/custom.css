@@ -105,6 +105,12 @@ pre code {
 
 .path-frontpage input[data-drupal-selector="edit-search-api-fulltext"] {
   flex-grow: 1 !important;
+  max-width: none;
+}
+
+.path-frontpage fieldset.js-form-type-search-api-autocomplete {
+  flex-grow: 1 !important;
+  max-width: none;
 }
 
 
