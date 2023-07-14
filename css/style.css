@@ -141,6 +141,19 @@ section.region-top-header-form {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+/* sort */
+
+.js-modal-form-views-block-id-exposedformsolr_search_contentpage_1_4 .form-item-sort-bef-combine {
+  margin-left: auto;
+}
+.js-modal-form-views-block-id-exposedformsolr_search_content_en_castellanopage_1_3 .form-item-sort-bef-combine {
+  margin-left: auto;
+}
+/* Remove margin top for fieldset used as sort */
+.js-modal-form-views-block-id-exposedformsolr_search_content_en_castellanopage_1_3 fieldset.my-2,
+.js-modal-form-views-block-id-exposedformsolr_search_contentpage_1_4 fieldset.my-2 {
+  margin-top: 0 !important;
+}
 
 .js fieldset.form-type-search-api-autocomplete input.form-autocomplete:focus {
     background-image: url(../../../../core/misc/throbber-inactive.png);
