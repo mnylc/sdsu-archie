@@ -58,7 +58,7 @@ body {
     color: #f7f7f7;
 }
 
-#views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
+.views-exposed-form:focus-within fieldset.form-type-search-api-autocomplete input {
     border: solid 1px #b3ffe0;
 }
 
