@@ -156,10 +156,10 @@ a:not(.toolbar-item):active,
 .page-item.active .page-link {
     background-color: #0071b3 !important;
     border-color: #0071b3 !important;
-    color: white;
+    color: white !important;
 }
 
-.page-link,
+.page-link:not(.active),
 .page-link:hover {
     color: #0071b3 !important;
 }
