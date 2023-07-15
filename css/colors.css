@@ -154,8 +154,9 @@ a:not(.toolbar-item):active,
 
 
 .page-item.active .page-link {
-    background-color: #0071b3;
-    border-color: #0071b3;
+    background-color: #0071b3 !important;
+    border-color: #0071b3 !important;
+    color: white;
 }
 
 .page-link,
