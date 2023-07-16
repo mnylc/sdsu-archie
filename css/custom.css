@@ -1087,3 +1087,21 @@ a.advanced-search-link:hover {
 #sidebar_first:not(#sidebar_first:has(div)) {
   display: none;
 }
+
+
+/* Site wide alerts */
+
+.sitewide-alert .close {
+  float: right;
+  border: none;
+  background-color: rgb(166, 25, 46);
+  color: white;
+  font-weight: 800;
+}
+
+.sitewide-alert .alert-info {
+  color: black;
+  background-color: rgba(0, 128, 128, 0.3);
+  border-color: transparent;
+  border-radius: 0;
+}
