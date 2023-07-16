@@ -1099,7 +1099,7 @@ a.advanced-search-link:hover {
   font-weight: 800;
 }
 
-.sitewide-alert .alert-info {
+.sitewide-alert.alert-info {
   color: black;
   background-color: rgba(0, 128, 128, 0.3);
   border-color: transparent;
