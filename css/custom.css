@@ -695,7 +695,7 @@ nav > ul > li.active.nav-item > a {
 /* Collection Page - List View */
 
 .field--name-node-title h2 {
-    font-size: 1.65em;
+    font-size: 1.5em;
     font-weight: 500;
     padding: 15px 0;
 }
@@ -718,6 +718,14 @@ nav > ul > li.active.nav-item > a {
 .field--name-field-descriptive-metadata p {
     margin-bottom: 1.5rem;
     line-height: 1.4;
+}
+/* Override for H3 (normally uppercase) and condensed for Metadata Description/node display */
+div.content div.node h3 {
+  font-family: 'Proxima Nova','Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: revert;
+  font-size: 1.5rem;
 }
 
 .layout__region--first {
