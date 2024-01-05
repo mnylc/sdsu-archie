@@ -3,6 +3,56 @@
   --bs-body-color:#3b3b3b !important;
   --bs-link-color: #007bff !important
 }
+
+:root {
+  --bs-body-color:#3b3b3b !important;
+  --bs-link-color: #007bff !important;
+  --bs-primary: #007bff !important;
+  --bs-secondary: #000000 !important;
+  --bs-tertiary: #2b3951 !important;
+}
+
+
+.archipelago-subtheme-sdsu #drupal-off-canvas-wrapper {
+  --off-canvas-background-color-light: #f7f7f7;
+  --off-canvas-background-color-medium: #f9f9f9;
+  --off-canvas-background-color-dark: #0a8c7d;
+  --off-canvas-background-color: white;
+  --off-canvas-padding: 1.25rem;
+  --off-canvas-text-color: var(--bs-body-color);
+  --off-canvas-link-color: var(--bs-link-color);
+  --off-canvas-border-color: #666;
+  --off-canvas-font-family: inherit;
+  --off-canvas-vertical-spacing-unit: 0.5rem;
+  --off-canvas-focus-outline-width: 2px;
+  --off-canvas-focus-outline-color: #fff;
+  padding: 0 var(--off-canvas-padding) var(--off-canvas-padding);
+  color: var(--off-canvas-text-color);
+  background-color: var(--off-canvas-background-color);
+}
+
+.archipelago-subtheme-sdsu #drupal-off-canvas-wrapper .ui-dialog-titlebar {
+  --off-canvas-title-background-color: var(--off-canvas-background-color-dark);
+  --off-canvas-title-color: var(--off-canvas-background-color-light);
+}
+
+.archipelago-subtheme-sdsu #drupal-off-canvas-wrapper details {
+  --off-canvas-padding: 1.25rem;
+  --off-canvas-vertical-spacing-unit: 0.5rem;
+  --off-canvas-details-border-width: 0;
+  --off-canvas-details-border-color: none;
+  --off-canvas-details-background-color: var(--off-canvas-background-color-medium);
+  --off-canvas-details-text-color: var(--off-canvas-background-color-dark);
+  --off-canvas-details-summary-border: none;
+  --off-canvas-details-summary-padding: 0.625rem 1.25rem;
+  --off-canvas-details-summary-font-size: 0.875rem;
+  --off-canvas-details-summary-background-color: #f9f9f9;
+  --off-canvas-details-summary-background-color-hover: #2b3951;
+  --off-canvas-details-summary-text-color: #0071b3;
+  --off-canvas-details-summary-text-color-hover: #4b82bf;
+}
+
+
 body {
     color: #3b3b3b;
     background: #f2f2f2;
