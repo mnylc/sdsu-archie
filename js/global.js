@@ -10,7 +10,8 @@
   Drupal.behaviors.archipelago_subtheme = {
     attach: function (context, settings) {
       if ($(context).hasClass('search-box-with-glide')) {
-        $(context).children('.view-content').once('archipelago-subtheme-global-view-glide').each(function (element) {
+        const GlidelementsToAttach = once('archipelago-subtheme-global-view-glide', '.view-content', context);
+        $(GlidelementsToAttach).each(function (element) {
           let $glideElement = document.querySelector(".glide");
           if ($glideElement && Glide !== undefined) {
             const GlideInstanceView = new Glide('.glide', {
@@ -20,7 +21,8 @@
           }
         });
       }
-      $(context).find('body').once('archipelago-subtheme-global').each(function () {
+       const elementsToAttach = once('archipelago-subtheme-global', 'body', context);
+       $(elementsToAttach).each(function () {
           let $glideElement = document.querySelector(".glide");
           if ($glideElement && Glide !== undefined) {
             const GlideInstanceBody = new Glide('.glide').mount();
