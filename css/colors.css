@@ -295,9 +295,9 @@ input.form-control.button:hover, input.form-control.button:focus {
     background-color:#0256b1 !important;
 }
 /* Specific to Facet Widget Submits since by default we do not add a background to the buttons */
-.facets-widget-sbf_range_date_slider input.form-control.button {
+.archipelago-subtheme-sdsu .facets-widget-sbf_range_date_slider input.form-control.button {
     background-color: #0a8c7d;
-    color: #f7f7f7;
+    color: #f7f7f7 !important;
 }
 
 
